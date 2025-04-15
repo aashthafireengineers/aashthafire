@@ -224,6 +224,7 @@
     color: white;
     border: 2px solid transparent;
     display: inline block;
+    font-size: 0.875rem;
 }
 
 .link-info a:hover {
