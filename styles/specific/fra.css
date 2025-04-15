@@ -1,0 +1,175 @@
+#header-container {
+    top: 0;
+    position: absolute;
+}
+
+/* Fire Risk Assessment  */
+
+.fra-container {
+    box-sizing: border-box;
+    margin-top: 80px;
+    background: rgba(112, 128, 144, 0.271);
+}
+
+/* Intro  */
+.fra-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;  
+}
+
+.fra-intro h1 {
+    text-transform: uppercase;
+    color: rgb(6, 6, 106);
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.493);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.fra-intro h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 4px;
+    background: var(--flame-logo);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fra-intro p {
+    padding: 1.5rem;
+    border-radius: 7px;
+    background: white;
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.474);
+    margin: 2rem 0;
+}
+
+.why-fra {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2.5rem;
+}
+
+.fra-img,
+.fra-reasons {
+    flex: 1;
+}
+
+.fra-img {
+    width: auto;
+    max-width: 75%;
+}
+
+.fra-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.096);
+}
+
+.fra-reasons {
+    border: solid var(--flame-logo) 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.371);
+    border-radius: 7px;
+    background: white;   
+}
+
+.fra-reasons h2 {
+    color: var(--dark-blue);
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.fra-reasons li {
+    font-size: 1.2rem;
+    margin-left: 35px;
+    padding: 0.5rem;
+}
+
+
+.fra-steps {
+    padding: 1rem;
+    background: rgba(150, 199, 240, 0.364);
+    box-shadow: 0 4px 6px rgba(46, 44, 43, 0.474);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    border-radius: 7px; 
+}
+
+.fra-steps h2 {
+    color: var(--dark-blue);
+    text-align: center;
+}
+
+.fra-steps p {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.fra-steps ul li {
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+}
+
+.fra-review {
+    padding: 2.5rem;
+    background: white;
+}
+
+.fra-review h2 {
+    color: var(--dark-blue);
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.fra-review ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.fra-review ul li {
+    background: #003366;
+    color: white;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.447);
+    
+}
+
+.fra-review ul li:hover {
+    background: var(--flame-logo);
+}
+
+
+@media (min-width: 992px) {
+    .why-fra {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 600px) {
+    .fra-review ul{
+        flex-direction: column;
+    }
+}

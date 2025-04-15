@@ -1,0 +1,351 @@
+
+#header-container {
+    top: 0;
+    position: absolute;
+}
+
+.compartment-container {
+    margin-top: 80px;
+    background: #f5907417;
+}
+
+.compart-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.compart-banner>h1{
+    color: var(--trust-blue);
+    text-align: center;
+    padding: 0.5rem 1rem;
+    text-shadow: 0 6px 8px rgba(137, 137, 163, 0.681);
+    position: relative;
+    display: inline-block;
+}
+
+.compart-banner>h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 4px;
+    background: var(--flame-logo);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.compart-img-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.compart-img{
+    width: 75vw;
+    max-height: 70vh;
+}
+
+.compart-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 25px;
+    box-shadow: 0 5px 7px rgba(25, 25, 26, 0.581);
+}
+
+.compart-info{
+    background: white !important;
+    text-align: center;
+    padding: 2.5rem;
+    border-radius: 5px;
+    margin: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.473);
+}
+
+.compart-info p{
+    font-weight: bold;
+}
+
+.compart-how-to {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 2rem;
+    background: white;
+}
+
+.compart-how-to h2 {
+    text-align: center;
+    letter-spacing: 2px;
+    color: var(--blue-v1);
+}
+
+.how-to-boxes {
+    margin-top: 2rem;
+    border: solid var(--flame-logo);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+    gap: 1rem;
+    width: 85%;
+}
+
+.how-to-boxes a {
+    text-decoration: none;
+    padding: 7px;
+    background: rgb(3, 67, 120);
+    color: white;
+    border-radius: 25px;
+    font-family: "HanumanBold";
+    text-align: center;
+    cursor: pointer;
+}
+
+.how-to-boxes a:hover {
+    flex-grow: 1;
+    transition: flex 0.5s ease;
+    background: var(--flame-logo);
+    color: rgb(3, 67, 120);
+}
+
+
+.fire-barriers {
+    display: none;
+}
+
+.fire-barriers:target{
+    display: flex;
+    justify-content: center;
+    background-color: #85898726;
+    padding: 2rem;
+    width: 100%;
+}
+
+.barriers-desc {
+    background: rgba(112, 128, 144, 0.134);
+    padding: 1rem;
+    text-align: center;
+    border-radius: 11px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.553);
+}
+
+.barriers-desc h2 {
+    color: #750909;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.barriers-desc strong {
+    color: #080b50;
+    font-size: 1.5rem;
+}
+
+.barriers-desc p {
+    color: #150701;
+    padding: 5px;
+}
+
+#fireBarriers{
+    scroll-margin-top: 85px;
+}
+
+.fire-door{
+    display: none;
+}
+
+.fire-door:target{
+    display: block;
+}
+
+.fire-door-desc {
+    padding: 2rem 2.5rem;
+    margin: 2rem 2.5rem;
+    background-color: rgba(65, 105, 225, 0.378);
+    border-radius: 7px; 
+}
+
+.fire-door-desc h2 {
+    text-align: center;
+    padding: 7px;
+    color: rgb(106, 11, 11);
+}
+
+.fire-door-desc p {
+    text-align: center;
+}
+
+.fire-door-desc .fire-door-points {
+    padding: 1rem;
+    font-family: "HanumanBold";
+    padding-left: 2rem;
+    color: #02092a;
+}
+
+#fireDoor{
+    scroll-margin-top: 85px;
+}
+
+.fire-stopping{
+    display: none;
+}
+
+.fire-stopping:target {
+    display: block;
+    padding: 1rem 0.5rem;
+    background-color: rgba(240, 237, 236, 0.699);
+}
+
+.fire-stopping>h2 {
+    text-align: center;
+    color: rgb(106, 11, 11);
+}
+
+.fire-stopping-steps {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: #d4d7e4a2;
+    margin: 2.5rem 2rem;
+    padding: 1rem 0.5rem;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgb(41, 41, 45);
+}
+
+.fire-stopping-step {
+    width: 350px;
+    max-width: 550px;
+    height: auto;
+    background-color: #dc430c5e;
+    text-align: center;
+    border: solid #ed650bbb 5px;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px rgba(0, 0, 255, 0.532);
+}
+
+.fire-stopping-step:hover{
+    animation: shake 0.5s;
+    /* animation-iteration-count: infinite; */
+}
+
+.fire-stopping-step h3 {
+    color: white;
+    padding: 5px;
+    background-color: #d35806f3;
+}
+
+.fire-stopping-step p {
+    color: #020a30;
+    padding: 5px;
+    font-family: "HanumanBold";
+}
+
+#fireStopping{
+    scroll-margin-top: 85px;
+}
+
+.fire-compartment-container{
+    padding: 3rem 1.5rem;
+}
+
+.fire-compartment-container h2{
+    text-align: center;
+    padding: 2rem 1rem;
+    color: var(--trust-blue);
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.29);
+}
+
+.fire-compart-steps{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.fire-compart{
+    background: rgba(112, 128, 144, 0.193);
+    border-radius: 7px;
+    padding: 2rem 1rem;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.405);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fire-compart h3{
+    text-align: center;
+    color: var(--blue-v1);
+}
+
+.fire-compart p{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.fire-compart:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (min-width:992px) {
+    .compart-intro-wrapper {
+        flex-direction: row;
+    }
+
+    .fire-compart-steps{
+        flex-direction: row;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}

@@ -1,0 +1,237 @@
+
+/* PA/VA  */
+
+#header-container {
+    top: 0;
+    position: absolute;
+}
+
+.pava-container {
+    box-sizing: border-box;
+    margin-top: 80px;
+    background: #f5907417;
+}
+
+.pava-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.pava-heading{
+    color: rgb(6, 6, 106);
+    text-shadow: 0 4px 6px rgba(29, 26, 26, 0.456);
+}
+
+.pava-heading h1{
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.pava-heading h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 4px;
+    background: var(--flame-logo);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pava-image{
+    width: 75%;
+    height: 300px;
+}
+
+.pava-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    box-shadow: 0 4px 6px rgba(93, 85, 85, 0.826);
+    border-radius: 25px;
+}
+
+.pava-intro{
+    padding: 2.5rem;
+    background: white !important;
+    border-radius: 7px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 255, 0.164);
+}
+
+.pava-intro p{
+    font-size: 1.2rem;
+}
+
+.pava-info{
+    padding: 2.5rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.pava-components, .pava-installation{
+    width: 100%;
+}
+
+.pava-components{
+    background-color: #443f3f31;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.416);
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px 20px;
+    margin: auto 0;
+}
+
+.pava-components h2{
+    color: #064483;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.pava-components ul{
+    list-style-type: none;
+    font-weight: bolder;
+    font-family: "HanumanBold";
+    margin: 0;
+    padding: 0;
+}
+
+.pava-components li{
+    font-size: 1.5rem;
+    color: #340303;
+    margin: 0.5rem 0;
+}
+
+.pava-components li:before{
+    content: '✔';
+    color: #065a92;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.pava-installation{
+    border-radius: 10px;
+    background-color: #fff;
+    background: linear-gradient(135deg, #efe4d9, #d0d3dd);
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.416);
+}
+
+.pava-installation h2{
+    color: rgb(30, 6, 138);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.pava-installation p{
+    font-family: "HanumanBold";
+    font-size: 1.5rem;
+    color: #690a0a;
+    line-height: 1.5;
+}
+
+.pava-reasons{
+    background-color: white;
+    padding: 2rem;
+}
+
+.pava-reasons h2{
+    text-align: center;
+    color: #084078;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 4px 6px rgba(26, 25, 25, 0.333);
+}
+
+.pava-reasons .reasons{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.pava-reasons .reason-card{
+    background: linear-gradient(135deg, #ffa436, #f17305fd);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pava-reasons .reason-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.pava-reasons .reason-card h3{
+    margin-bottom: 0.5rem;
+    color: #000060;
+}
+
+.pava-reasons .reason-card p{
+    font-weight: bold;
+    font-family: "HanumanBold";
+    letter-spacing: 1px;
+    color: #550000;
+}
+
+.pava-stat{
+    background-color: #ecf0f1;
+    padding: 2.5rem 1.5rem;
+}
+
+.pava-stat h2{
+    color: var(--trust-blue);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.pava-stat .research-stats{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.stat{
+    background: linear-gradient(135deg, #0645833c, #06458381);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.363);
+}
+
+.stat h3{
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: rgb(110, 51, 3);
+    text-shadow: 0 4px 6px rgba(26, 25, 25, 0.333);
+}
+
+.stat p{
+    margin-top: 5px;
+    font-family: "HanumanBold";
+    color: #020a30;
+}
+
+@media (min-width:992px) {
+    .pava-info{
+        flex-direction: row;
+    }
+}
+

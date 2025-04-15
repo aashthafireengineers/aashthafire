@@ -1,0 +1,243 @@
+#header-container {
+    top: 0;
+    position: absolute;
+}
+
+/* System Integration and Maintenance */
+
+.intriMain-container {
+    box-sizing: border-box;
+    margin-top: 80px;
+    background: rgba(112, 128, 144, 0.271);
+}
+
+.intriMain-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.intriMain-header  h1{
+    color: var(--dark-blue);
+    text-transform: uppercase;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.258);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.intriMain-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 4px;
+    background: var(--flame-logo);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.intri-desc{
+    background: white;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.258);
+    margin: 2rem 0;
+}
+
+.intri-desc p{
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+
+.intri-systems{
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intri-img{
+    padding: 1rem 0;
+    width: 75%;
+    height: 400px;
+}
+
+.intri-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.542);
+}
+
+.intri-types-container{
+    background: white;
+    border-radius: 7px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.intri-types-container h2{
+    text-align: center;
+    color: var(--dark-blue);
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.282);
+    padding-bottom: 1rem;
+}
+
+.intri-types{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.intri-type{
+    display: flex;
+    flex-direction: column;
+    background: rgba(53, 117, 169, 0.484);
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px rgba(2, 2, 61, 0.778);  
+}
+
+.intri-type h3{
+    color: white;
+    background: rgba(4, 42, 74, 0.523);
+    border-radius: 7px;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.intri-type p{
+    padding: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: auto 0;
+}
+
+.intri-process{
+    padding: 2rem;  
+}
+
+.intri-process h2{
+    text-align: center;
+    color: var(--dark-blue);
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.382); 
+}
+
+.intri-process span p{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2rem;
+}
+
+.intri-process-steps{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    padding: 0 1.5rem;
+    text-align: center;
+    flex-direction: column;
+}
+
+.intri-process-steps P{
+    background: rgba(70, 131, 180, 0.521);
+    border-radius: 7px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.548);
+    padding: 0.5rem;
+}
+
+.intri-importance{
+    background: white;
+    padding: 2rem;
+    text-align: center;
+    margin: 0 1.5rem;
+    border-radius: 7px;
+}
+
+.intri-importance h2{
+    color: var(--dark-blue);
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.353);
+    padding-bottom: 1rem;
+}
+
+.intri-importance ul{
+    list-style-type: none;
+}
+
+.intri-importance ul li{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.intri-importance ul li::before {
+    content: "✔";
+    position: relative;
+    left: -7px;
+    color: #128605;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.maintenance{
+    text-align: center;
+    padding: 2rem;
+}
+
+.maintenance h2{
+    padding: 0.5rem;
+    text-transform: uppercase;
+    color: rgb(156, 53, 2);
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.348);
+}
+
+.maintenance p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--dark-blue);
+    letter-spacing: 2px;
+}
+
+
+@media (min-width: 992px) {
+    .intri-types{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .intri-type{
+        width: 25%;
+    }
+    .intri-type:nth-child(3){
+        width: 100%;
+    }
+    .intri-type:nth-child(6){
+        width: 100%;
+    }
+    .intri-type:nth-child(1){
+        flex: 1;
+        height: 220px;
+    }
+    .intri-type:nth-child(2){
+        flex: 1;
+        height: 220px;
+    }
+    .intri-type:nth-child(4){
+        flex: 1;
+        height: 200px;
+    }
+    .intri-type:nth-child(5){
+        flex: 1;
+        height: 200px;
+    }
+
+    .intri-process-steps{
+        flex-direction: row;
+    }
+}

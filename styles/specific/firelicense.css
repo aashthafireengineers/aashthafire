@@ -1,0 +1,114 @@
+#header-container {
+    top: 0;
+    position: absolute;
+}
+
+/* Fire License / NOC  */
+
+.firelicense-container {
+    box-sizing: border-box;
+    margin-top: 80px;
+    background: rgba(112, 128, 144, 0.271);
+}
+
+
+.firelicense-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.firelicense-banner h1{
+    color: var(--dark-blue);
+    text-align: center;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    text-shadow: 0 6px 8px rgba(137, 137, 163, 0.681);
+    position: relative;
+    display: inline-block;
+}
+
+.firelicense-banner h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 4px;
+    background: var(--flame-logo);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.firelicense-info{
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    margin: 0 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.473);
+}
+
+.firelicense-info p{
+    font-size: 1.2rem;
+}
+
+.noc-img{
+    width: 75%;
+    height: 50vh;
+}
+
+.noc-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 25px;
+    box-shadow: 0 5px 7px rgba(25, 25, 26, 0.581);
+}
+
+
+.fsc-reasons{
+    margin: 1.5rem;
+    padding: 1rem;
+    border-radius: 7px;
+    background: rgba(70, 131, 180, 0.305);   
+}
+
+.fsc-reasons h2{
+    text-align: center;
+    padding: 1rem;
+    color: var(--dark-blue);
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.414);
+}
+
+.fsc-reasons ul{
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+}
+
+.fsc-reasons ul li{
+    padding: 0.5rem;
+}
+
+
+.fsc-steps{
+    padding: 1.5rem;  
+}
+
+.fsc-steps h2{
+    text-align: center;
+    padding: 1rem;
+    color: var(--dark-blue);
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.414);
+}
+
+.fsc-steps ul{
+    font-size: 1.2rem;
+    margin-left: 1.5rem;
+}
+
+.fsc-steps ul li{
+    padding: 0.5rem;
+}

@@ -1,0 +1,142 @@
+
+#header-container {
+    top: 0;
+    position: absolute;
+}
+
+.escape-container {
+    box-sizing: border-box;
+    margin-top: 80px;
+    background: #f5907417;
+}
+
+.escape-header {
+    text-align: center;
+    padding: 2.5rem 2rem;
+}
+
+.escape-header h1{
+    text-shadow: 0 4px 6px rgba(57, 53, 53, 0.429);
+    color: rgb(3, 3, 113);
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.escape-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 4px;
+    background: var(--flame-logo);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.escape-intro {
+    background: white;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.24);
+    margin: 1rem 2.5rem;
+    text-align: center;
+}
+
+.escape-intro p {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-family: "HanumanBold";
+}
+
+.escape-import {
+    margin: 2rem 2.5rem;
+    padding: 2.5rem 2rem;
+    background: rgba(0, 0, 255, 0.066);
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.652);
+}
+
+.escape-import h2 {
+    color: var(--flame-logo);
+}
+
+.escape-import p {
+    margin-left: 2rem;
+    font-weight: bolder;
+    padding: 1rem 0.5rem;
+}
+
+.escape-factors {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    padding: 2.5rem 1.5rem;
+}
+
+.factors,
+.factors-img {
+    width: 100%;
+    flex: 1;
+}
+
+.factors-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: solid rgba(128, 128, 128, 0.319) 5px;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px;
+}
+
+.factors {
+    padding: 2rem;
+    background-color: #7c848b2f;
+    border-radius: 7px;
+}
+
+.factors h2{
+    text-align: center;
+    color: #22476c;
+    margin-bottom: 1rem;
+}
+
+.factors-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.factors-list li {
+    margin-left: 2.5rem;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.factors-list li::before {
+    content: "✔";
+    position: absolute;
+    left: -25px;
+    color: #094902;
+}
+
+.escape-notes{
+    padding: 2rem 3.5rem;
+    background: #003366b8;
+    text-align: center;
+}
+
+.escape-notes p{
+    font-family: "HanumanBold";
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 0 6px 8px rgba(0, 0, 0, 0.581);
+}
+
+
+@media (min-width:992px) {
+    .escape-factors{
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,325 @@
+
+#header-container {
+    top: 0;
+    position: absolute;
+}
+/* Aashtha Fire Engineers  */
+
+.about-container{
+    box-sizing: border-box;
+    margin-top: 80px;
+    background: rgba(1, 25, 49, 0.089);
+}
+
+.about-us{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.about-us h1{
+    justify-self: center;
+    color: var(--dark-blue);
+    position: relative;
+    display: inline-block;
+    text-shadow: 0 6px 8px rgba(137, 137, 163, 0.681);
+}
+
+.about-us h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    height: 4px;
+    background: var(--flame-logo);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.who-we-are{
+    margin: 2rem;
+    text-align: center;
+    background: rgba(2, 87, 156, 0.249);
+    padding: 1rem;
+    border-radius: 25px;
+    box-shadow: 0 6px 8px rgba(63, 63, 65, 0.479);  
+}
+
+.who-we-are h2{
+    color: var(--trust-blue);
+}
+
+.who-we-are p{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    padding: 1rem 0;
+}
+
+
+.what-we-do{
+    margin: 2.5rem 1rem;
+    padding: 1rem;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.226);
+    background: rgba(0, 128, 128, 0.307);  
+}
+
+.what-we-do h2{
+    text-align: center;
+    color: var(--trust-blue);
+}
+
+.what-we-do ul{
+    margin: 1rem;
+    padding: 2rem 1.5rem;
+    border-radius: 11px;
+    box-shadow: 0 4px 6px;
+    background: white;
+}
+
+.what-we-do ul li{
+    font-family: 'HanumanBold';
+    padding-bottom: 1rem;
+    margin-left: 1.5rem;
+    letter-spacing: 1px;
+}
+
+
+/* MISSION VISION  */
+.mission-vision{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+.mission, .vision{
+    background: white;
+    border-radius: 7px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 255, 0.356);
+}
+
+.mission h2, .vision h2{
+    color: var(--trust-blue);
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.23);
+    background: #d3e2ec;
+    border-radius: 7px;
+}
+
+.mission p, .vision p{
+    font-size: 1.2rem;
+    font-family: "HanumanBold";
+    letter-spacing: 1px;
+    padding: 0.5rem 0;
+}
+
+/* CERTS  */
+
+.certs-wrapper{
+    text-align: center;
+    background: white;
+    padding: 2rem;
+}
+
+.certs-wrapper h2{
+    color: #034b7a;
+    padding-bottom: 1rem;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.289);
+}
+.certs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cert{
+    width: 200px;
+    height: 200px;
+    border: solid;
+    box-shadow: 0 4px 6px rgba(1, 1, 67, 0.712);
+    border-radius: 5px;
+}
+
+.cert img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* WHY US  */
+
+.why-us {
+    width: 100%;
+    background: #00549926;
+    padding: 2.5rem 2rem;
+}
+
+.why-us h2 {
+    text-align: center;
+    color: var(--dark-blue);
+    padding: 1rem 0;
+}
+
+.flip-card-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card-container {
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.flip-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+}
+
+.card-container:hover .flip-card {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    padding: 2rem;
+    border-radius: 7px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.522);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-front {
+    background-color: #bbbbbb77;
+    color: black;
+    border: solid #2980b9 2px;
+}
+
+.card-back {
+    background-color: #034b7a;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 1rem;
+}
+
+.statement{
+    background: white;
+}
+
+.statement p{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding: 2rem;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.359);
+    color: var(--trust-blue);
+}
+
+/* CLIENTS SCETION  */
+.clients-section {
+    background: white;
+    padding: 1rem 0;
+    position: relative;
+    overflow: hidden;
+    border: solid 4px var(--blue-v1);
+    border-radius: 5px;
+}
+
+.marquee-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.marquee-track {
+    display: flex;
+    animation: marquee 30s linear infinite;
+    padding: 1rem 0;
+}
+
+.client-logo {
+    height: 55px;
+    margin: 0 2rem;
+    filter: grayscale(50%);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.client-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+.marquee-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100px;
+    background: linear-gradient(90deg, rgba(91, 87, 85, 0.262) 0%, rgb(72, 70, 69) 100%);
+}
+
+.marquee-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100px;
+    background: linear-gradient(90deg, rgb(72, 70, 69) 0%, rgba(91, 87, 85, 0.262) 100%);
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .flip-card-container {
+        flex-wrap: wrap;
+    }
+    .card-container {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px){
+    .cert{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 414px){
+    .certs{
+        flex-wrap: wrap;
+    }
+}

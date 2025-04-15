@@ -1,0 +1,272 @@
+
+#header-container {
+    top: 0;
+    position: absolute;
+}
+
+.evacuation-strategy{
+    margin-top: 80px;
+    background: #f5907417;
+}
+
+.evacuation-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.evacuation-banner>h1{
+    color: var(--trust-blue);
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 0.5rem 1rem;
+    text-shadow: 0 6px 8px rgba(137, 137, 163, 0.681);
+    position: relative;
+    display: inline-block;
+}
+
+.evacuation-banner>h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 4px;
+    background: var(--flame-logo);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.site-banner{
+    width: 75vw;
+    max-height: 50vh;
+}
+
+.site-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 25px;
+    box-shadow: 0 5px 7px rgba(25, 25, 26, 0.581);
+}
+
+.evacuation-info{
+    background: white !important;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 5px;
+    margin: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.473);
+}
+
+.evacuation-info h3{
+    padding: 0.5rem;
+    color: var(--dark-blue);
+}
+
+.evacuation-info p{
+    font-weight: bold;
+}
+
+
+/* Types of Evacuation  */
+
+.evacuation-types-container{
+    background: #3f719f;
+    padding: 1.5rem 1rem;
+}
+
+.evacuation-types-container>h2{
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+
+.evacuation-types{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+}
+
+.staged-evac, .phased-evac{
+    width: 100%;
+    flex: 1;
+    background: rgba(231, 233, 236, 0.905);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px black;
+}
+
+.staged-evac h3{
+    text-align: center;
+    color: var(--flame-logo);
+    font-family: sans-serif;
+    padding-bottom: 1rem;
+}
+
+.phased-evac h3{
+    text-align: center;
+    color: var(--flame-logo);
+    font-family: sans-serif;
+    padding-bottom: 1rem;
+}
+
+.phased-evac-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.phased-evac-list li {
+    margin-left: 2rem; 
+    position: relative;
+}
+
+.phased-evac-list li::before {
+    content: "✔";
+    position: absolute;
+    left: -20px;
+    color: #1B5E20;
+}
+
+.evacuation-aspects{
+    display: flex;
+    width: 100%;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.evac-texts {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem;
+    overflow-y: auto;
+}
+
+.evac-texts th {
+    color: var(--flame-logo);
+    background-color: #ecf1f5a0 !important;
+    border: solid;
+    font-size: 1.5rem;
+}
+
+.evac-texts td {
+    padding: 10px;
+    text-align: left;
+    border: 2px dotted #bbbdd6fb;
+    background-color: #06348fbd;
+    color: white;
+}
+
+.evacuation-importance {
+    width: 100%;
+    text-align: center;
+    background-color: #0c2174f6;
+    border-radius: 10px;
+    border-bottom: solid #AC4817 5px;
+    border-top: solid #AC4817 5px;
+    padding: 1.5rem 0;
+}
+
+.evacuation-importance h2 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.side-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.5rem; 
+}
+
+.side-box {
+    width: 250px;
+    height: 250px;
+    background-color: #A04000 !important;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* transition: transform 0.5s ease-in-out; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0.7);
+}
+
+.side-box h3 {
+    color: rgb(255, 245, 104);
+    font-size: 1.25rem;
+}
+
+.side-box p {
+    font-weight: bold;
+    color: white;
+    font-size: 0.875rem;
+}
+
+
+@keyframes zoomInOut {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+}
+
+
+.side-box:nth-child(1) {
+    animation: zoomInOut 9s infinite;
+    animation-delay: 0s;
+}
+
+.side-box:nth-child(2) {
+    animation: zoomInOut 9s infinite;
+    animation-delay: 1s;
+}
+
+.side-box:nth-child(3) {
+    animation: zoomInOut 9s infinite;
+    animation-delay: 2s;
+}
+
+.side-box:nth-child(4) {
+    animation: zoomInOut 9s infinite;
+    animation-delay: 3s;
+}
+
+
+@media (min-width:992px) {
+    .evacuation-types{
+        flex-direction: row;
+    }
+}
+@media (max-width: 500px) {
+    .evac-texts th{
+        font-size: var(--text-sm);
+    }
+    .evac-texts td{
+        padding: 5px;
+        font-size: var(--text-sm);
+    }
+}
