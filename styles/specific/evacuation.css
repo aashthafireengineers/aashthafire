@@ -137,36 +137,82 @@
     color: #1B5E20;
 }
 
-.evacuation-aspects{
-    display: flex;
-    width: 100%;
-    flex: 1;
-    justify-content: center;
-    align-items: flex-start;
+/* Evacuation Aspects  */
+.evacuation-aspects-container {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    background: #eee;
+    padding: 1rem 0.5rem;
 }
 
-.evac-texts {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 2rem;
-    overflow-y: auto;
+.evacuation-aspects-container>h2 {
+    font-family: "MontserratBold";
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: -1px;
+    color: #34495e;
+    padding-bottom: 0.5rem;
 }
 
-.evac-texts th {
-    color: var(--flame-logo);
-    background-color: #ecf1f5a0 !important;
+.evacuation-aspects {
+    background: #32475c;
+    color: #fff;
+    border-radius: 7px;
+    overflow: hidden;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.2rem;
+}
+
+.evacuation-aspects th {
     border: solid;
-    font-size: 1.5rem;
+    color: #dd5;
+    background: #32475c;
+    font-family: "MontserratBold";
 }
 
-.evac-texts td {
-    padding: 10px;
+.evacuation-aspects th {
+    display: none;
+}
+
+.evacuation-aspects td {
+    display: block;
     text-align: left;
-    border: 2px dotted #bbbdd6fb;
-    background-color: #06348fbd;
-    color: white;
 }
 
+.evacuation-aspects td:before {
+    content: attr(data-th) ": ";
+    font-weight: bold;
+    display: inline-block;
+    color: #dd5;
+    padding-right: 5px;
+}
+
+.evacuation-aspects td:first-child {
+    padding-top: 0.5rem;
+}
+
+.evacuation-aspects td:last-child {
+    padding-bottom: 0.5rem;
+}
+
+.evacuation-aspects th,
+.evacuation-aspects td {
+    margin: 0.5em 1em;
+}
+
+.evacuation-aspects tr>td:first-child {
+    font-weight: bolder;
+}
+
+.evacuation-aspects tr:not(:first-child){
+    background: #4c688596;
+    border-radius: 5px;
+    /* border: solid; */
+    box-shadow: 0 0 0 1px rgb(245, 243, 243);
+}
+
+/* Importance of Phased Evacuation */
 .evacuation-importance {
     width: 100%;
     text-align: center;
@@ -261,12 +307,18 @@
         flex-direction: row;
     }
 }
-@media (max-width: 500px) {
-    .evac-texts th{
-        font-size: var(--text-sm);
+
+@media (min-width: 600px) {
+    .evacuation-aspects td{
+        border: solid white 1px;
     }
-    .evac-texts td{
-        padding: 5px;
-        font-size: var(--text-sm);
+    .evacuation-aspects td:before {
+        display: none;
+    }
+    .evacuation-aspects th,
+    .evacuation-aspects td {
+        display: table-cell;
+        padding: 1rem !important;
+        /* padding: 0.25em 0.5em; */ 
     }
 }
