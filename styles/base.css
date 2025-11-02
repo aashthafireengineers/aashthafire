@@ -14,34 +14,19 @@ body {
     overflow-x: hidden;
 }
 
-/* @media (min-width: 768px) {
-    html{
-        font-size: 16px;
-    }
-} */
 
-@media (min-width: 992px) {
-    html{
-        font-size: 16px;
-    }
-}
-@media (min-width: 1200px) {
-    html{
-        font-size: 18px;
-    }
-}
+/* Colors & Font Sizes  */
 
-/* @media (max-width: 414px) {
-    html{
-        font-size: 10px;
-    }
-} */
-
-
-/* Font Size  */
 :root {
-    --text-base: 1rem;
+    --logo-red: #FA4500;
+    --sapphire: #003366;
+    --navy-blue: #1E3A8A;
+    --shadow-gray: #3A3A3A;
+    --raisin-black: #212121;
+    --yellow:#FBBA32;
+
     --text-sm: 0.875rem;
+    --text-base: 1rem;
     --text-lg: 1.125rem;
     --text-xl: 1.25rem;
     --text-2xl: 1.5rem;
@@ -66,35 +51,54 @@ h4{
     font-size: var(--text-2xl);
     font-family: "PlayfairBold";
 }
+h5{
+    font-size: var(--text-xl);
+    font-family: "PlayfairBold";
+}
 P{
     font-size: var(--text-base);
     font-family: "OpenSans";
 }
 
 
-/* Colors  */
-:root {
-    --flame-logo: #CD5A21;
-    --fire-red: #FF0000;
-    --safety-yellow: #FFD700;
-    --blue-v1: #2946A5;
-    --trust-blue: #013F80;
-    --dark-blue: #072e56;
-    --dark-gray: #1A1A1A;
-    --medium-gray: #6C757D;
+/* Media Breakpoints */
+
+/* @media (min-width: 768px) {
+    html{
+        font-size: 16px;
+    }
+} */
+
+@media (min-width: 1025px) {
+    html{
+        font-size: 16px;
+    }
 }
+/* @media (min-width: 1200px) {
+    html{
+        font-size: 18px;
+    }
+} */
+
+/* @media (max-width: 414px) {
+    html{
+        font-size: 10px;
+    }
+} */
 
 
-/* Custom font faces */
-@font-face {
-    font-family: 'CourierPrime';
-    src: url('../../fonts/CourierPrime-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
+/* Font Faces */
+
 @font-face {
     font-family: 'FlatBrush';
-    src: url('../../fonts/FlatBrush-Regular.woff2') format('woff2');
+    src: url('../../fonts/FlatBrush-Normal.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'VarelaRound';
+    src: url('../../fonts/VarelaRound-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -103,6 +107,12 @@ P{
     font-family: 'HanumanBold';
     src: url('../../fonts/Hanuman-Bold.ttf') format('truetype');
     font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CourierPrime';
+    src: url('../../fonts/CourierPrime-Regular.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
 }
 @font-face {

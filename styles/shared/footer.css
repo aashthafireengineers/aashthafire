@@ -1,7 +1,7 @@
 /* Footer Styles */
 
 .site-footer {
-    background: #2C2C2C;
+    background: var(--shadow-gray);
     color: #E0E0E0;
     padding: 2rem 1rem;
 }
